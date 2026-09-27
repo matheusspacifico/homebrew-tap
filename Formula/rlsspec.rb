@@ -1,25 +1,25 @@
 class Rlsspec < Formula
   desc "Check Postgres Row Level Security against a spec of expected access"
   homepage "https://github.com/matheusspacifico/rlsspec"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/matheusspacifico/rlsspec/releases/download/v0.1.0/rlsspec-aarch64-apple-darwin.tar.xz"
-      sha256 "dd0ad2fdd4b413f7741256b6db5601f214b7046912d8568a705b5eaae5cd00fa"
+      url "https://github.com/matheusspacifico/rlsspec/releases/download/v0.1.1/rlsspec-aarch64-apple-darwin.tar.xz"
+      sha256 "4eec69ee24d1d0a748968c3170f48ab660357f3698dc2fc8de2c10f2fd5920d1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/matheusspacifico/rlsspec/releases/download/v0.1.0/rlsspec-x86_64-apple-darwin.tar.xz"
-      sha256 "cd3ea40d8286e38c6b04e7615b6ab5a6ede396e70c0a83c82659be2aba1e1ba5"
+      url "https://github.com/matheusspacifico/rlsspec/releases/download/v0.1.1/rlsspec-x86_64-apple-darwin.tar.xz"
+      sha256 "8593506f39a7806432d5e38d8c2d64adf2bfdc993e96d450e921180ef1e19fcd"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/matheusspacifico/rlsspec/releases/download/v0.1.0/rlsspec-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "153cd71ed8c263bf484fbb2f4a03d253f90f882852d363068bdb80508f7e333b"
+      url "https://github.com/matheusspacifico/rlsspec/releases/download/v0.1.1/rlsspec-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "7140277db9d858d619a04e063cfb3a8b8cfdc820dfd48af68c5fde60dd681ca9"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/matheusspacifico/rlsspec/releases/download/v0.1.0/rlsspec-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "8479bd06ef1129a35be9808a1f3cf3c0aa51b075841ec3e68122877248b6938d"
+      url "https://github.com/matheusspacifico/rlsspec/releases/download/v0.1.1/rlsspec-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "57b959a788e53880896b1826a6ea1848d93dd902b6c73a7a9765701de0ab2fb3"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
